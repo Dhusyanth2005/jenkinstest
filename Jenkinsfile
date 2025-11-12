@@ -16,21 +16,22 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo '📦 Installing Node modules...'
-                sh 'npm install'
+                // Use 'bat' instead of 'sh' on Windows
+                bat 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo '🧪 Running tests...'
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
         stage('Build Application') {
             steps {
                 echo '🏗️ Building project...'
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
@@ -47,8 +48,8 @@ pipeline {
             }
             steps {
                 echo '🚀 Deploying application...'
-                // Example deployment step (you can replace it with your own)
-                sh 'npm start &'
+                // Start the Node app in the background (Windows-compatible)
+                bat 'start npm start'
             }
         }
     }
