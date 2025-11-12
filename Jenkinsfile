@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo '📥 Cloning repository from GitHub...'
-                git branch: 'main', url: 'https://github.com/your-username/node-jenkins-demo.git'
+                git branch: 'main', url: 'https://github.com/Dhusyanth2005/jenkinstest.git'
             }
         }
 
