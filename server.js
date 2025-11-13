@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello Jenkins + Node.js!');
+  res.send('Hello chat app is running successfully!');
 });
 
 const PORT = process.env.PORT || 3000;

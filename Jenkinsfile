@@ -42,9 +42,12 @@ pipeline {
         }
 
         stage('Deploy (Optional)') {
+            when {
+                branch 'main'
+            }
             steps {
                 echo 'Deploying application...'
-                bat 'npm start'
+                bat 'start npm start'
             }
         }
     }
