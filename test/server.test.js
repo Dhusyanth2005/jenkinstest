@@ -4,9 +4,9 @@ const http = require('http');
 const server = http.createServer(app);
 
 server.listen(3001, () => {
-  console.log("✅ Test server started on port 3001");
+  console.log("Test server started on port 3001");
   server.close(() => {
-    console.log("🧪 Test complete. Closing server...");
+    console.log("Test complete. Closing server...");
     process.exit(0);
   });
 });

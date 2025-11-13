@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Running tests...\" && node test/server.test.js",
-    "build": "echo \"Build complete!\""
+    "build": "echo \"Build complete successfully!\""
   },
   "author": "",
   "license": "ISC",
